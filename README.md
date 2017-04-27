@@ -17,8 +17,26 @@ For more background, see [https://github.com/mathjax/MathJax/wiki/Single-file-bu
 
 ## Getting Started ##
 
+This project assumes you have NodeJS installed.
+
+1. Install dependencies
+
 ```shell
 npm install grunt-cli -g
 npm install
+```
+
+2. Build the MathJax configuration bundles
+
+```shell
 grunt
 ```
+
+3. View test pages in your browser
+
+```shell
+npm start
+```
+
+
+
