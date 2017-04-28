@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>MathJax-single-file TeX Test Page</title>
+    <script>
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                processEscapes: true
+            }
+        }
+
+    </script>
+    <script type="text/javascript" src="../dist/TeXHTML/MathJax-TeXHTML.js"></script>
+    <!--
+
+<script type="text/javascript" src="../dist/TeXSVG/MathJax-TeXSVG.js"></script>
+-->
+    <script>
+        MathJax.Hub.Register.MessageHook("Math Processing Error", function (message) {
+            console.error('[MathJax ERROR]', message);
+        });
+        MathJax.Hub.Register.MessageHook("TeX Jax - parse error", function (message) {
+            console.error('[MathJax TeX parsing ERROR]', message);
+        });
+
+        setTimeout(() => console.log('[MATHJAX]', MathJax.Hub.lastError), 2000);
+
+    </script>
+
+
+</head>
+
+<body>
+    <p>Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a>. Original source:
+        <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">meta.math.stackexchange</a>        (cc by-sa 3.0), with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>.</p>
+
+    <p>
+        $$ y_0 = \sqrt{4x^3 -1} $$
+    </p>
+    <p>
+        $$ 5 \times 5 = 25 $$
+    </p>
+
+</html>

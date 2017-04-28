@@ -5,19 +5,27 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <title>MathJax-single-file TeX Test Page</title>
-  <div> <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {
-        inlineMath: [
-          ['$', '$'],
-          ['\\(', '\\)']
-        ],
-        processEscapes: true
-      }
+<script>
+  window.MathJax = {
+    tex2jax: {
+      inlineMath: [
+        ['$', '$'],
+        ['\\(', '\\)']
+      ],
+      processEscapes: true
     }
-  </script> </div>
-  <div> <script type="text/javascript" src="../dist/TeXHTML/MathJax-TeXHTML.js"></script> </div>
+  }
+</script>
+<script type="text/javascript" src="../dist/TeXHTML/MathJax-TeXHTML.js"></script>
+<script>
+  MathJax.Hub.Register.MessageHook("Math Processing Error", function (message) {
+    console.error('[MathJax ERROR]', message);
+  });
+  MathJax.Hub.Register.MessageHook("TeX Jax - parse error", function (message) {
+    console.error('[MathJax TeX parsing ERROR]', message);
+  });
 
+</script>
 
 
 </head>
@@ -267,7 +275,7 @@
     <div> <script type="math/tex; mode=display" id="MathJax-Element-190">\begin{CD} A @>a>> B\\ @V b V V= @VV c V\\ C @>>d> D \end{CD}
     </script> </div>
     <div> <script type="math/tex; mode=display" id="MathJax-Element-191">\begin{CD} A @>>> B @>{\text{very long label}}>> C \\ @. @AAA @| \\ D @= E @
-      <<< F \end{CD}</script> </div>
+     F \end{CD}</script> </div>
         <div> <script type="math/tex" id="MathJax-Element-192">\require{AMScd}</script> </div>
         <div> <script type="math/tex; mode=display" id="MathJax-Element-193">\begin{CD} RCOHR'SO_3Na @>{\text{Hydrolysis,$\Delta, Dil.HCl$}}>> (RCOR')+NaCl+SO_2+ H_2O \end{CD}
         </script> </div>
@@ -307,7 +315,9 @@
         <div> <script type="math/tex" id="MathJax-Element-219">\lim \limits_{x \to 1} \frac{x^2-1}{x-1}</script> </div>
         <div> <script type="math/tex; mode=display" id="MathJax-Element-220">\lim_{x\to 1}?</script> </div>
         <div> <script type="math/tex; mode=display" id="MathJax-Element-221">\mathop{+}\limits_{i=1}^k\text{ instead of }+_{i=1}^k</script> </div>
+        <!--
         <div> <script type="math/tex" id="MathJax-Element-222">\lim\limits_{x\to 1}</script> </div>
+        -->
         <div> <script type="math/tex" id="MathJax-Element-223">\lim_{x\to 1}</script> </div>
         <div> <script type="math/tex" id="MathJax-Element-224">\lim_{x\to 1}</script> </div>
         <div> [EXPECTED ERROR] <script type="math/tex" id="MathJax-Element-225">lim\limits_{x\to 1}</script> </div>
