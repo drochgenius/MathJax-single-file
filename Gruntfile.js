@@ -38,9 +38,10 @@ module.exports = function(grunt) {
   const array = fs.readFileSync(require.resolve('mathjax')).toString().split(splitter)
   const mathjaxStart = array[0];
   const mathjaxEnd = splitter + array[1];
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    unpacked: 'node_modules/mathjax/unpacked', 
+    unpacked: require.resolve('mathjax').replace(/MathJax.js$/, ''), 
     "file-creator": {
       prepTempHelpers: {
         "MathJax_part1": function(fs, fd, done) {
