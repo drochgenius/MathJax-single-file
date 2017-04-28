@@ -436,6 +436,8 @@ module.exports = function(grunt) {
             '"[MathJax]/extensions/TeX/verb.js",\n'+
             '"[MathJax]/jax/input/TeX/jax.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/jax.js",\n'+
+'"[MathJax]/jax/output/CommonHTML/fonts/TeX/fontdata.js",\n'+
+'"[MathJax]/jax/output/CommonHTML/fonts/TeX/fontdata-extra.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/autoload/annotation-xml.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/autoload/maction.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/autoload/menclose.js",\n'+
@@ -443,7 +445,7 @@ module.exports = function(grunt) {
 '"[MathJax]/jax/output/CommonHTML/autoload/mmultiscripts.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/autoload/ms.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/autoload/mtable.js",\n'+
-'"[MathJax]/jax/output/CommonHTML/autoload/multiline.js",\n'+  
+'"[MathJax]/jax/output/CommonHTML/autoload/multiline.js",\n'+
             '"[MathJax]/jax/element/mml/optable/Arrows.js",\n'+
             '"[MathJax]/jax/element/mml/optable/MiscMathSymbolsA.js",\n'+
             '"[MathJax]/jax/element/mml/optable/Dingbats.js",\n'+
@@ -467,8 +469,6 @@ module.exports = function(grunt) {
             '"[MathJax]/extensions/HelpDialog.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/fonts/TeX/AMS-Regular.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/fonts/TeX/Caligraphic-Bold.js",\n'+
-'"[MathJax]/jax/output/CommonHTML/fonts/TeX/fontdata.js",\n'+
-'"[MathJax]/jax/output/CommonHTML/fonts/TeX/fontdata-extra.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/fonts/TeX/Fraktur-Bold.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/fonts/TeX/Fraktur-Regular.js",\n'+
 '"[MathJax]/jax/output/CommonHTML/fonts/TeX/Main-Bold.js",\n'+
@@ -846,6 +846,8 @@ module.exports = function(grunt) {
         '<%= unpacked %>/jax/element/mml/jax.js',
         '<%= unpacked %>/extensions/toMathML.js',
 '<%= unpacked %>/jax/output/CommonHTML/jax.js',
+'<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/fontdata.js',
+'<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/fontdata-extra.js',
 '<%= unpacked %>/jax/output/CommonHTML/autoload/annotation-xml.js',
 '<%= unpacked %>/jax/output/CommonHTML/autoload/maction.js',
 '<%= unpacked %>/jax/output/CommonHTML/autoload/menclose.js',
@@ -853,7 +855,7 @@ module.exports = function(grunt) {
 '<%= unpacked %>/jax/output/CommonHTML/autoload/mmultiscripts.js',
 '<%= unpacked %>/jax/output/CommonHTML/autoload/ms.js',
 '<%= unpacked %>/jax/output/CommonHTML/autoload/mtable.js',
-'<%= unpacked %>/jax/output/CommonHTML/autoload/multiline.js',        
+'<%= unpacked %>/jax/output/CommonHTML/autoload/multiline.js',
         '<%= unpacked %>/extensions/TeX/AMScd.js',
         '<%= unpacked %>/extensions/TeX/AMSmath.js',
         '<%= unpacked %>/extensions/TeX/AMSsymbols.js',
@@ -869,7 +871,7 @@ module.exports = function(grunt) {
         '<%= unpacked %>/extensions/TeX/enclose.js',
         '<%= unpacked %>/extensions/TeX/extpfeil.js',
         '<%= unpacked %>/extensions/TeX/mathchoice.js',
-       //  '<%= unpacked %>/extensions/TeX/mediwiki-texvc.js',
+        '<%= unpacked %>/extensions/TeX/mediwiki-texvc.js',
         '<%= unpacked %>/extensions/TeX/mhchem.js',
         '<%= unpacked %>/extensions/TeX/newcommand.js',
         // '<%= unpacked %>/extensions/TeX/noErrors.js',
@@ -901,8 +903,6 @@ module.exports = function(grunt) {
 'html-helper1.js',
 '<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/AMS-Regular.js',
 '<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/Caligraphic-Bold.js',
-'<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/fontdata.js',
-'<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/fontdata-extra.js',
 '<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/Fraktur-Bold.js',
 '<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/Fraktur-Regular.js',
 '<%= unpacked %>/jax/output/CommonHTML/fonts/TeX/Main-Bold.js',
