@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    unpacked: require.resolve('mathjax').replace(/MathJax.js$/, ''), 
+    unpacked: require.resolve('mathjax').replace(/\/MathJax.js$/, ''), 
     "file-creator": {
       prepTempHelpers: {
         "MathJax_part1": function(fs, fd, done) {
