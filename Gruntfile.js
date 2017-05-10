@@ -155,7 +155,6 @@ module.exports = function (grunt) {
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js",\n' +
-            '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js",\n' +  // file not found
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js",\n' +
@@ -199,7 +198,6 @@ module.exports = function (grunt) {
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js",\n' +
-            '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js",\n' +  // file not found
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/Main.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js",\n' +
@@ -318,7 +316,6 @@ module.exports = function (grunt) {
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js",\n' +
-            '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js",\n' +  // file not found
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js",\n' +
@@ -362,7 +359,6 @@ module.exports = function (grunt) {
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js",\n' +
-            '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js",\n' +  // file not found
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/Main.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js",\n' +
             '"[MathJax]/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js",\n' +
@@ -583,7 +579,6 @@ module.exports = function (grunt) {
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js',
-          '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js',
@@ -627,7 +622,6 @@ module.exports = function (grunt) {
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js',
-          '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/Main.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js',
@@ -749,7 +743,6 @@ module.exports = function (grunt) {
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js',
-          '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js',
@@ -793,7 +786,6 @@ module.exports = function (grunt) {
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js',
-          '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/Main.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js',
           '<%= unpacked %>/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js',
